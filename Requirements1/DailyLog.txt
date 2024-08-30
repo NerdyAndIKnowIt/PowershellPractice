@@ -1,0 +1,73 @@
+
+
+
+    Directory: C:\Users\chasbrec\Documents\Repos\powershell\Requirements1
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         8/29/2024   7:43 PM        2779843 apache_access.log                                                    
+-a----         8/29/2024   7:43 PM          16189 eventA.log                                                           
+-a----         8/29/2024   7:43 PM          15667 eventB.log                                                           
+-a----         8/29/2024   7:43 PM          15766 eventC.log                                                           
+-a----         8/29/2024   7:43 PM          16693 eventD.log                                                           
+-a----         8/29/2024   7:43 PM          16671 eventE.log                                                           
+
+
+
+2024-08-29 19:49:54
+
+
+
+    Directory: C:\Users\chasbrec\Documents\Repos\powershell\Requirements1
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         8/29/2024   7:43 PM        2779843 apache_access.log                                                    
+-a----         8/29/2024   7:43 PM          16189 eventA.log                                                           
+-a----         8/29/2024   7:43 PM          15667 eventB.log                                                           
+-a----         8/29/2024   7:43 PM          15766 eventC.log                                                           
+-a----         8/29/2024   7:43 PM          16693 eventD.log                                                           
+-a----         8/29/2024   7:43 PM          16671 eventE.log                                                           
+
+
+
+2024-08-29 19:50:56
+
+
+
+    Directory: C:\Users\chasbrec\Documents\Repos\powershell\Requirements1
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         8/29/2024   7:43 PM        2779843 apache_access.log                                                    
+-a----         8/29/2024   7:43 PM          16189 eventA.log                                                           
+-a----         8/29/2024   7:43 PM          15667 eventB.log                                                           
+-a----         8/29/2024   7:43 PM          15766 eventC.log                                                           
+-a----         8/29/2024   7:43 PM          16693 eventD.log                                                           
+-a----         8/29/2024   7:43 PM          16671 eventE.log                                                           
+
+
+
+2024-08-29 19:52:22
+
+
+
+    Directory: C:\Users\chasbrec\Documents\Repos\powershell\Requirements1
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         8/29/2024   7:43 PM        2779843 apache_access.log                                                    
+-a----         8/29/2024   7:43 PM          16189 eventA.log                                                           
+-a----         8/29/2024   7:43 PM          15667 eventB.log                                                           
+-a----         8/29/2024   7:43 PM          15766 eventC.log                                                           
+-a----         8/29/2024   7:43 PM          16693 eventD.log                                                           
+-a----         8/29/2024   7:43 PM          16671 eventE.log                                                           
+
+
+
+2024-08-29 20:04:02
+
