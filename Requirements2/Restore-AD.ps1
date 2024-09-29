@@ -5,10 +5,12 @@ Import-Module ActiveDirectory
 
 #check to see if the finance OU exists by looking for the Finance OU name and storing it in a string variable
 Write-host "Checking to see if the Finance OU exists..."
-$FinanceOUName = Get-ADOrganizationalUnit -Filter {Name -like "Finance"}
+$FinanceOUName = Get-ADOrganizationalUnit -Filter {
+    Name -eq "Finance"
+}
 
 #if the finance OU exists delete it, else just inform the user there is not a finance OU
-if ($FinanceOUName) {
+if ($null -ne $FinanceOUName) {
     Remove-ADOrganizationalUnit -Identity "OU=Finance" -Recursive
     Write-Host "The Finance OU was found and deleted"
 }
