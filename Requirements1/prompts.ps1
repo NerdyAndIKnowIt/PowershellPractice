@@ -46,8 +46,7 @@ try {
             #if the user chooses option 4...
             4 {
                 #get all the running processes, sort them in descending order, and place them in a grid view
-                Get-Process | Sort-Object CPU | Out-GridView
-
+                Get-Process | Select-Object ID, Name, VM | Sort-Object VM | Out-GridView
             }
             #if the user chooses option 5...
             5 {

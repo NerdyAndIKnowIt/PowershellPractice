@@ -89,3 +89,21 @@ Mode                 LastWriteTime         Length Name
 
 2024-08-31 21:23:44
 
+
+
+    Directory: C:\Users\Breanna Chase\Documents\repos\powershellpractice\Requirements1
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         8/31/2024   3:44 PM        2789789 apache_access.log                                                    
+-a----         8/31/2024   3:44 PM          16189 eventA.log                                                           
+-a----         8/31/2024   3:44 PM          15667 eventB.log                                                           
+-a----         8/31/2024   3:44 PM          15766 eventC.log                                                           
+-a----         8/31/2024   3:44 PM          16693 eventD.log                                                           
+-a----         8/31/2024   3:44 PM          16671 eventE.log                                                           
+
+
+
+2024-09-28 20:28:09
+
