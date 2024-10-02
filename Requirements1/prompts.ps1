@@ -38,10 +38,9 @@ try {
             }
             #if the user chooses option 3...
             3 {
-                #list the average CPU usage
-                Get-WmiObject Win32_Processor | Measure-Object -Property LoadPercentage -Average | Select-Object @{Name="Average CPU Usage"; Expression={$_.Average}}
-                #list the memory usage
-                Get-WmiObject -Class Win32_OperatingSystem | Format-Table TotalVisibleMemorySize, FreePhysicalMemory
+                #list the average CPU usage and list the memory usage
+                Get-Counter -Counter "\Processor(_Total)\% Processor Time", "\Memory\Committed Bytes"
+
             }
             #if the user chooses option 4...
             4 {
