@@ -3,32 +3,37 @@ made by Breanna Chase, student ID 011725162
 #>
 
 #check for the existance of the finance OU
-$OUName = "ou=finance,dc=consultingfirm,dc=com"
-$OUFinanceExists = Get-ADOrganizationalUnit -Filter {Name -eq "finance"} -ErrorAction SilentlyContinue 
+$OUName = "ou=Finance,dc=consultingfirm,dc=com"
+$OUFinanceExists = Get-ADOrganizationalUnit -Filter {Name -eq "Finance"} -ErrorAction SilentlyContinue 
 #"ErrorAction SilentlyContinue" will bypass any error if the finance OU does not exist
 
 if ($OUFinanceExists) {
-    Write-Host "OU Finance exists"
+    Write-Host "OU finance exists"
+    # Set-ADOrganizationalUnit -Identity $OUName -ProtectedFromAccidentialDeletion $false
     Remove-ADOrganizationalUnit -Identity $OUName -Recursive -Confirm:$false
-    Write-Host "OU Finance has been deleted"
+    Write-Host "OU finance has been deleted"
 }
 else {
-    Write-Host "OU Finance does not exist"
+    Write-Host "OU finance does not exist"
 }
 
 #create the finance OU
-New-ADOrganizationalUnit -Name "Finance" -Path "DC=consultingfirm,DC=com"
-Write-Host "OU Finance created"
+New-ADOrganizationalUnit -Name "Finance" -Path "DC=consultingfirm,DC=com" -ProtectedFromAccidentalDeletion $False
+Write-Host "OU finance created"
 
 #import users from financePersonnel.csv file into the finance OU
-$csvPath = ".\financePersonnel.csv"
+$csvPath = Join-Path -Path (Get-Location) -ChildPath "\financePersonnel.csv"
 $csvData = Import-Csv -Path $csvPath
-foreach ($row in $csvData) {
-    $DisplayName = "$($row.FirstName) $($row.LastName)"
 
-    New-ADUser -GivenName $row.FirstName `
-        -Surname $row.LastName `
+Write-Host $csvPath
+Write-Host $csvData
+foreach ($row in $csvData) {
+    $DisplayName = "$($row.First_Name) $($row.Last_Name)"
+
+    New-ADUser -GivenName $row.First_Name `
+        -Surname $row.Last_Name `
         -DisplayName $DisplayName `
+        -SamAccountName $samAccount `
         -PostalCode $row.PostalCode `
         -OfficePhone $row.OfficePhone `
         -MobilePhone $row.MobilePhone `
